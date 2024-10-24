@@ -1,0 +1,67 @@
+/************************************************
+*			프린트 : PRINT						*
+************************************************/
+
+@media print {
+	.MsoNormal {word-break: break-all !important;}
+	font, div, p, span, a{font-family: Nanum Gothic !important; line-height:160% !important;}
+
+	.no-print-page {
+		display: none; /* 작업의 편리함을 위해 넣은 페이지 구분선. 프린트 시에는 보이지 않음 */
+	}
+	h1 {
+		color: #000;
+		background: none;
+	}
+	nav, aside {
+		display: none;
+	}
+	body, article {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		page-break-after: avoid;
+	}
+	@page {
+		margin: 2cm;
+	}
+
+	.rn_grobal,
+	.top_fix_wrap,
+	.rc_r_bn,
+	.rns_controll,
+	.rc_sbn,
+	.rn_sider,
+	.gb_wrap,
+	.s5_tit,
+	.s_case5,
+	.pf_wrap_ln,
+	.rn_footer,
+	.slide_close,
+	iframe{
+		display:none !important;
+	}
+
+	#rn_wrap{width:100%;position:relative;}
+	.rn_container{width:96%;padding:3% 2%;padding:0;position:relative;}
+
+	.rn_stitle{text-align:left;font-size:30px;font-weight:800;color:#333;line-height:34px;}
+	.rn_stitle b{color:#999;}
+	.rn_sstitle{font-size:22px;font-weight:bold;color:#999;}
+	.rn_sdate{padding:20px 0 65px;text-align:right;font-size:12px;}
+	.rn_sdate span{margin:0 7px;}
+
+	.rn_scontent{width:96%;padding:3% 2%;border-top:1px solid #ddd !important;position:relative;}
+	.rns_controll{display:none !important;}
+
+	.rn_scontent .rns_text{padding:0 0 40px;}
+	.rn_scontent .rns_text div{font-size:14px; color:#333;}
+	.rn_scontent .rns_text p{font-size:14px; color:#333;}
+	.rn_scontent .rns_text .copy{color:#333;}
+	.rn_scontent .rns_text .desc{font-size:12px;color:#a7a7a7;}
+}
+
+
+
+
+

@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+#login_wrap{width: 100%; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; max-width: 500px; margin:30px auto 0;}
+.login_wrap_tit{font-size: 2.2em; color:#000; margin-bottom: 20px;}
+.login_wrap_txt{font-size: 1.3em; color:#000; margin-bottom: 40px;}
+
+.login__cont_input{width: 100%; min-width: 500px; height: 100%; margin-bottom: 10px;}
+.login__cont_input > input{width: 100%; border:1px solid #ddd; padding: 10px; margin-bottom: 10px; box-sizing: border-box; height: 40px; line-height: 40px; font-size: 1.1em;}
+
+.login__cont_link{width: 100%; text-align: right; display: flex; flex-direction: column; margin-bottom: 10px;}
+span.red_link{color:#a82127; font-weight: bold; font-size: 1em; cursor: pointer;}
+
+.login__cont_btn{width: 100%; display: flex; flex-direction: column;}
+.login__cont_btn > input{margin-bottom: 10px; height: 40px; line-height: 40px; border:1px solid #ddd; cursor: pointer; color:#a82127; font-size: 1.1em; box-sizing: border-box;}
+.login__cont_btn > input.bg_white{background: #fff;}
+
+.login__pwd_link > span.gray{position: relative;}
+.login__pwd_link > span.gray b.login_account_none,
+.login__pwd_link > span.gray b.reset_time{display:block; position: absolute;left:0px; top: -15px;}
+
+
+.login_pwd_number{display: flex; flex-direction: row; width: 100%; justify-content: space-between;}
+.login_pwd_number span.reset_time{color:#a82127;}
+
+.login_num_wrong, .login_num_wrong_txt{width: 100%; color:#a82127; text-align: left;}
+
+.pwd_same_cont{display: flex; flex-direction: column;}
+.pwd_same_cont > .redn{color:#a82127 !important;}
+.tac{text-align: center; line-height: 1.4em;}
+
+.login_pwd_ok_btn{max-width: 500px; width: 100%; margin:0 auto;}
+.login_pwd_ok_btn >input{width: 100%; height: 40px; line-height: 40px; color:#a82127; border: 1px solid #ddd; font-size: 1.1em;}
+
+.join_new_txt.tar{width: 100%; text-align: right;}
+.join_new_txt span.redn{color:#a82127;}
+.redn{color:#a82127;}
+
+
+
+/*join_check_agree*/
+.join_check_agree{width: 100%; max-width: 500px; margin:0 auto;}
+.join_check_agree_cont{width: 100%; max-width: 500px;}
+
+.cate, .cate2{ 
+    width:100%;
+    position:relative;
+}
+
+  .cate .menu{display: flex; justify-content: space-between; width: 100%; border-bottom: 1px solid #c4c4c4; padding:10px 0 10px;}
+  .cate:last-child .menu{margin-bottom: 0px;}
+
+  .cate2 .menu2{
+    display:block;
+    position:relative;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+  }
+
+  .cate .menu .menulink, .cate2 .menu2 .menulink2{
+    display:block;
+    color:#000;
+    text-decoration:none;
+    width:100%;
+    padding-left:0;
+    line-height:40px;
+  }
+  .cate2 .menu2 .subopen2{
+    position:absolute;
+    width:8px;
+    height:8px;
+    right:15px;
+    padding:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border-right:1px solid #000;
+    border-bottom:1px solid #000;
+    transform:rotate(45deg);
+  }
+  .cate ul, .cate2 ul{border-bottom: 1px solid #000; padding: 0px;}
+  .cate > ul > li{
+    padding:0 0 0;
+  }
+ 
+  .cate2 ul > li{border:1px solid #000; margin-bottom: 10px;   height: 300px; overflow-y: scroll; padding: 10px;}
+  .cate2 ul > li::-webkit-scrollbar{display: none;}
+
+  .cate2 ul > li:last-child{margin-bottom: 0px;}
+  .cate2 ul:last-child{
+    border-bottom: none;
+  }
+
+  .cate > ul > li:last-child{
+    padding-bottom:0;
+  }
+.cate .menu div input[type="checkbox"] + label{
+    background: url(../images/icon/ic_check_off.svg)no-repeat;
+    padding-left: 30px;
+    background-size: 18px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="checkbox"]:checked{display: none;}
+.cate .menu div input[type="checkbox"]:checked + label{
+    background: url(../images/icon/ic_check_on.svg)no-repeat;
+    padding-left: 30px;
+    background-size: 18px;
+    width: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.cate2 ul li h4{font-weight: bold; font-size: 1.5em; margin-bottom: 10px;}
+
+.jca_table{width: 100%; margin-top: 20px; margin-bottom: 20px;}
+.jca_table tr:first-child td{background: #000; color:#fff; text-align: center;}
+.jca_table tr td{border:1px solid #eee; padding:5px;}
+
+
+.join__ok_cont{width: 100%; max-width: 500px;}
+
+.fz-8 {font-size: 0.8em; padding-left: 30px;}
